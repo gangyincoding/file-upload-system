@@ -1,0 +1,102 @@
+# ==========================================
+# 文件上传管理系统 - Git 忽略文件配置
+# ==========================================
+
+# 依赖目录
+node_modules/
+**/node_modules/
+
+# 构建输出
+dist/
+dist-ssr/
+build/
+out/
+
+# 环境变量文件（包含敏感信息）
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+
+# 日志文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 上传文件目录（用户上传的文件不应该提交到代码库）
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE 和编辑器
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.user
+*.userosscache
+*.sln.docstates
+
+# 测试覆盖率
+coverage/
+*.lcov
+.nyc_output/
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# 数据库文件（如果使用 SQLite）
+*.sqlite
+*.sqlite3
+*.db
+
+# PM2
+.pm2/
+
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 压缩文件
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# 系统和编辑器缓存
+.eslintcache
+.stylelintcache
